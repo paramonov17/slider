@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Tabs</title>
+    <title>Slider</title>
 </head>
 <body>
     
@@ -25,166 +25,70 @@
 
     <div class="container">
 
-        <div class="tabs">
-
-            <h1 class="tabs__title">Табы</h1>
 
 
 
-            <div class="tabs__content">
 
-                <nav class="tabs__nav">
-                    <button  class="tabs__nav-btn" type="button" data-tab="#tab_01">Таб 1</button>
-                    <button class="tabs__nav-btn" type="button" data-tab="#tab_02">Таб 2</button>
-                    <button class="tabs__nav-btn" type="button" data-tab="#tab_03">Таб 3</button>
-                    <button class="tabs__nav-btn" type="button"data-tab="#tab_04">Таб 4</button>
-                </nav>
+        <div class="slider">
 
-
-                <div class="tabs__body">
+            <h1 class="slider__title">Слайдер</h1>
 
 
 
-                    <div class="tabs__block" id="tab_01">
-                        <ol>
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
+            <div class="slider__inner">
+                <div class="slider__items">
 
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-        
-                        </ol>
+                    <div class="slider__item active">
+                        <img src="images/1.png" class="slider__item-img" alt="img">
+                        <div class="slider__item-text">Текст 1</div>
                     </div>
 
-                    
-                    
-                    <div class="tabs__block" id="tab_02">
-                        <ol>
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-
-                        </ol>
+                    <div class="slider__item">
+                        <img src="images/2.png" class="slider__item-img" alt="img">
+                        <div class="slider__item-text">Текст 2</div>
                     </div>
 
-
-                    
-                    <div class="tabs__block" id="tab_03">
-                        <ol>
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                    <li class="tabs__list-items">Элемент 5</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-        
-                        </ol>
+                    <div class="slider__item">
+                        <img src="images/3.png" class="slider__item-img" alt="img">
+                        <div class="slider__item-text">Текст 3</div>
                     </div>
 
-
-                    
-                    <div class="tabs__block" id="tab_04">
-                        <ol>
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                </ol>
-
-                            <li class="tabs__list-item">Заголовок нумерованного списка</li>
-                                <ol>
-                                    <li class="tabs__list-items">Элемент 1</li>
-                                    <li class="tabs__list-items">Элемент 2</li>
-                                    <li class="tabs__list-items">Элемент 3</li>
-                                    <li class="tabs__list-items">Элемент 4</li>
-                                    <li class="tabs__list-items">Элемент 5</li>
-                                </ol>
-
-        
-                        </ol>
+                    <div class="slider__item">
+                        <img src="images/4.png" class="slider__item-img" alt="img">
+                        <div class="slider__item-text">Текст 4</div>
                     </div>
 
+                </div>
 
-
-
+                <div class="slider__pagination">
+                    <button class="slider__button prev">
+                        <img src="images/left.svg" alt="button-navigation">
+                    </button>
+                    <div class="slider__dots">
+                        <div class="slider__dots-item active"></div>
+                        <div class="slider__dots-item"></div>
+                        <div class="slider__dots-item"></div>
+                        <div class="slider__dots-item"></div>
+                    </div>
+                    <button class="slider__button next">
+                        <img src="images/right.svg" alt="button-navigation">
+                    </button>
                 </div>
 
 
 
-            </div>
 
-            <div class="tabs__control" >
-                <button class="tabs__control-btn" type="button">Продолжить</button>
+
+
+            </div>
+                    
+                 
+                    
+    
+
+
+            <div class="slider__control">
+                <button class="slider__control-btn" type="button">Продолжить</button>
             </div>     
             
 
@@ -193,8 +97,6 @@
 
 
     </div>
-
-
 
     
 

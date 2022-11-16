@@ -1,36 +1,60 @@
-const btnControl = document.querySelector('.tabs__control-btn');
+
+const btnControl = document.querySelector('.slider__control-btn');
 
 btnControl.disabled = true;
 
-const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
+const sliderItem = document.querySelectorAll('.slider__item');
 
-const tabsBlock = document.querySelectorAll('.tabs__block');
+const dotsItem = document.querySelectorAll('.slider__dots-item');
 
-tabsBtn.forEach(function(item) {
-   
-    item.addEventListener('click', function() {
+let current = 0;
 
-        let currentBtn = item;
+const btnNext = document.querySelector('.next');
 
-        let tabId = currentBtn.getAttribute('data-tab');
+btnNext.onclick = function next() {
+    for (let i = 0; i < sliderItem.length; i++){
+        sliderItem[i].classList.remove('active');
+        dotsItem[i].classList.remove('active');
+    }
 
-        let currentTab = document.querySelector(tabId);
-
-        tabsBlock.forEach(function(item){
-            item.classList.remove('active');
-        });
-
-        currentBtn.classList.add('active');
-        currentTab.classList.add('active');
-
-        let tabsBtnActive = document.querySelectorAll('.active');
-
-        if (tabsBtn.length == tabsBtnActive.length-1){
-            btnControl.disabled = false;
-        }
-    });
     
-});
+    if (current >= sliderItem.length-1) {
+        current = 0;
+        btnControl.disabled = false;
+    }
+    else {
+        current++;
+    }
+    
+    sliderItem[current].classList.add('active');
+    dotsItem[current].classList.add('active');
+    
+}
 
-document.querySelector('.tabs__nav-btn').click();
+const btnPrev = document.querySelector('.prev');
+
+btnPrev.onclick = function prev() {
+
+    if (current <= 0){
+        current = sliderItem.length-1;
+        
+    }
+    else {
+        current--;
+    }
+
+    for (let i = 0; i < sliderItem.length; i++){
+        sliderItem[i].classList.remove('active');
+        dotsItem[i].classList.remove('active');
+        }
+    sliderItem[current].classList.add('active');
+    dotsItem[current].classList.add('active');
+
+    if (current == 0){
+        btnControl.disabled = false;
+    }
+    
+}
+
+
 
