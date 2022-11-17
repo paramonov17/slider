@@ -13,8 +13,6 @@ button {
     cursor: pointer;
   }
 
-
-
 .header{
     height: 64px;
     border-bottom: 1px solid #73BE43;
@@ -30,7 +28,6 @@ button {
     left: 0;
     top: 64px;
 }
-
 
 .header__container{
     padding: 23px 33px 24px 33px;
@@ -57,7 +54,6 @@ button {
     background-color: #E9262D;
 }
 
-
 .header__menu-burger::after,
 .header__menu-burger::before{
     content: "";
@@ -70,7 +66,6 @@ button {
 .header__menu-burger::before{
     top: 16px;
 }
-
 
 .container{
     padding: 34px 30px;
@@ -88,7 +83,6 @@ button {
     line-height: 24px;
     margin-bottom: 30px;
 }
-
 
 .slider__inner{
     width: 940px;
@@ -122,14 +116,12 @@ button {
     opacity: 1;
 }
 
-
 .slider__item-text{
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     margin-top: 25px;  
 }
-
 
 .slider__pagination{
     width: 100%;
@@ -166,9 +158,6 @@ button {
     opacity: 1;
 }
 
-
-
-
 .slider__control{
     display: flex;
     justify-content: center;
@@ -189,7 +178,6 @@ button {
 .slider__control-btn:hover{
     opacity: 0.8;
 }
-
 
 .slider__control-btn:disabled{
     background: rgba(28, 26, 26, 0.15);
