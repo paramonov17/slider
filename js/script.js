@@ -1,4 +1,3 @@
-
 const btnControl = document.querySelector('.slider__control-btn');
 
 btnControl.disabled = true;
@@ -17,18 +16,15 @@ btnNext.onclick = function next() {
         dotsItem[i].classList.remove('active');
     }
 
-    
     if (current >= sliderItem.length-1) {
         current = 0;
         btnControl.disabled = false;
     }
     else {
         current++;
-    }
-    
+    } 
     sliderItem[current].classList.add('active');
-    dotsItem[current].classList.add('active');
-    
+    dotsItem[current].classList.add('active');  
 }
 
 const btnPrev = document.querySelector('.prev');
@@ -36,8 +32,7 @@ const btnPrev = document.querySelector('.prev');
 btnPrev.onclick = function prev() {
 
     if (current <= 0){
-        current = sliderItem.length-1;
-        
+        current = sliderItem.length-1;      
     }
     else {
         current--;
@@ -52,8 +47,7 @@ btnPrev.onclick = function prev() {
 
     if (current == 0){
         btnControl.disabled = false;
-    }
-    
+    }    
 }
 
 
